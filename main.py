@@ -12,11 +12,11 @@ get_current_time = lambda action: time.strftime("%H:%M:%S", time.localtime(time.
 get_current_dayofweek = lambda action: time.strftime("%A", time.localtime(time.time() + 8*3600)) if action else time.strftime("%A", time.localtime(time.time()))
 
 
-SLEEPTIME = 0.2 # 每次抢座的间隔
-ENDTIME = "08:00:00" # 根据学校的预约座位时间+1min即可
+SLEEPTIME = 1 # 每次抢座的间隔
+ENDTIME = "22:35:00" # 根据学校的预约座位时间+1min即可
 
 ENABLE_SLIDER = False # 是否有滑块验证
-MAX_ATTEMPT = 10 # 最大尝试次数
+MAX_ATTEMPT = 50 # 最大尝试次数
 RESERVE_NEXT_DAY = True # 预约明天而不是今天的
 
                 
